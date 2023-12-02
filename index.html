@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wordle Ranking</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<div id="cuerpoPrincipal">
+  <div >
+    <h1 id="Titulo"><b id="W">Wo</b><b id="R">rd</b><b id="L">le</b></h1>
+  
+  </div>
+  
+  <div id="Entradas">
+    
+    <button id="casual">Casual</button><!--Modo de juego Casual-->
+      
+    <button id="iniciar">Iniciar</button><!--Boton para iniciar el cronometro-->
+    
+    
+    <input type="text" id="Entrada" placeholder="Palabra de 7 letras, Spanish" maxlength=""><!--Input donde se ingresan las palabras normales-->
+    
+    <input id="EntradaPistas" type="text" placeholder="Pistas"><!--Input donde se ingresan las palabras de la pista-->
+
+      <button id="TimeTrial">Time Trial</button><!--Boton para iniciar TimeTrial-->
+  
+      <button id="Ranking">Ranking</button><!--botno para iniciar el modo Ranking-->
+  
+      <p><Button id="Probar">Ingresar</button><!--Boton para intentar la palabra en el Input Entrada-->
+        <button id="Reset">Reset</button><!--Boton de reset para reiniriar todo el juego-->
+        <button id="Pistas">Probar</button></p><!--Boton para probar las pistas-->
+  
+  </div>  
+  <div id="caja">
+
+
+  </div>
+
+  <div id="PalabrasIngresadas">
+    <div id='grid'></div><!--Lugar donde se imprimen las palbras-->
+    <div id="grid2"></div> <!--Lugar donde se imprimen las letras de la pista-->
+  
+  </div>
+
+
+  <div id="cronometros">
+    <p id="cronometro" display="inline-block">00:00:00</p><!--Cronometro para el modo TimeTrial-->
+    <p id="cronometroR">00:00:00</p><!--Cronometro para el TimeTrial-->
+  </div>
+</div>
+  <p id="Contenido"></p> <!--Registra lo que aparece al final de la partida-->
+  <p id="palabras"></p>   <!--Registra la cantidad de palabras encontradas-->
+  <p id="PalabrasR"></p>  <!--Registro lo mismo que la anterior pero este es del Ranking-->
+  <p id="MensajePistas"></p> <!--Registra si tu pista coincide con tu palbra y si te quedaste sin intentos-->
+
+
+</body>
+
+</html>
